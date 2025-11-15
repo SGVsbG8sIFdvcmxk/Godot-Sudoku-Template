@@ -1,0 +1,53 @@
+[gd_resource type="Theme" load_steps=6 format=3 uid="uid://bojbac2q46yp7"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_u5sy4"]
+bg_color = Color(1, 1, 1, 1)
+border_width_left = 3
+border_width_top = 3
+border_width_right = 3
+border_width_bottom = 5
+border_color = Color(1, 1, 1, 1)
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_iywne"]
+bg_color = Color(0.91228896, 0.9122889, 0.91228884, 1)
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_lbhrr"]
+bg_color = Color(1, 1, 1, 1)
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_p57ef"]
+bg_color = Color(0.89059, 0.89059, 0.8905901, 1)
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_yqjtg"]
+bg_color = Color(0.98039216, 0.98039216, 0.98039216, 1)
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
+
+[resource]
+Button/colors/font_color = Color(0.091786645, 0.010242913, 0.03484016, 1)
+Button/colors/font_focus_color = Color(0.09019608, 0.011764706, 0.03529412, 1)
+Button/colors/font_hover_color = Color(0.09019608, 0.011764706, 0.03529412, 1)
+Button/colors/font_hover_pressed_color = Color(0.09019608, 0.011764706, 0.03529412, 1)
+Button/colors/font_pressed_color = Color(0.09019608, 0.011764706, 0.03529412, 1)
+Button/styles/focus = SubResource("StyleBoxFlat_u5sy4")
+Button/styles/hover = SubResource("StyleBoxFlat_iywne")
+Button/styles/normal = SubResource("StyleBoxFlat_lbhrr")
+Button/styles/pressed = SubResource("StyleBoxFlat_p57ef")
+Panel/styles/panel = SubResource("StyleBoxFlat_yqjtg")

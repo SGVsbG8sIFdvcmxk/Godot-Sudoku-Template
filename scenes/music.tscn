@@ -1,0 +1,63 @@
+[gd_scene load_steps=2 format=3 uid="uid://dbtsiy3ei1ywk"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_xl81k"]
+bg_color = Color(0.10980392, 0.10980392, 0.10980392, 0.80784315)
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Panel" type="Panel" parent="."]
+custom_minimum_size = Vector2(200, 100)
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_xl81k")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Panel"]
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_bottom = 64.0
+grow_horizontal = 2
+
+[node name="Label" type="Label" parent="Panel/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 6
+text = "Track_name.mp3"
+
+[node name="HBoxContainer2" type="HBoxContainer" parent="Panel"]
+custom_minimum_size = Vector2(0, 25)
+layout_mode = 1
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 0
+
+[node name="Button" type="Button" parent="Panel/HBoxContainer2"]
+layout_mode = 2
+size_flags_horizontal = 6
+size_flags_vertical = 4
+text = "next"
+
+[node name="Button2" type="Button" parent="Panel/HBoxContainer2"]
+layout_mode = 2
+size_flags_horizontal = 6
+size_flags_vertical = 4
+text = "play"
+
+[node name="Button3" type="Button" parent="Panel/HBoxContainer2"]
+layout_mode = 2
+size_flags_horizontal = 6
+size_flags_vertical = 4
+text = "pause"
